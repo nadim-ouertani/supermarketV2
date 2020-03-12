@@ -1,0 +1,9 @@
+.dropMenu {
+    height: 360px;
+    overflow: scroll;
+}
+
+.product-body {
+    height: 68px;
+    text-overflow: ellipsis;
+}

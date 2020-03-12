@@ -1,0 +1,451 @@
+include ./../include/header.pug
+
+section.pt-3.pb-3.page-info.section-padding.border-bottom.bg-white
+  .container
+    .row
+      .col-md-12
+        a(href='#')
+          strong
+            span.mdi.mdi-home
+            |  Home
+        span.mdi.mdi-chevron-right
+        a(href='#') Shop
+section.shop-list.section-padding
+  .container
+    .row
+      .col-md-3
+        .shop-filters
+          #accordion
+            .card
+              #headingOne.card-header
+                h5.mb-0
+                  button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | Category 
+                    span.mdi.mdi-chevron-down.float-right
+              #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordion')
+                .card-body.card-shop-filters
+                  form.form-inline.mb-3
+                    .form-group
+                      input.form-control(type='text' placeholder='Search By Category')
+                      button.pl-2.pr-2.btn.btn-secondary.btn-lg(type='submit')
+                        i.mdi.mdi-file-find
+                  .custom-control.custom-checkbox
+                    input#cb1.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb1') All Fruits 
+                  .custom-control.custom-checkbox
+                    input#cb8.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb8')
+                      | Fresh &amp; Herbs 
+                      span.badge.badge-primary 5% OFF
+                  .custom-control.custom-checkbox
+                    input#cb2.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb2')
+                      | Seasonal Fruits 
+                      span.badge.badge-secondary NEW
+                  .custom-control.custom-checkbox
+                    input#cb3.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb3')
+                      | Imported Fruits 
+                      span.badge.badge-danger 10% OFF
+                  .custom-control.custom-checkbox
+                    input#cb4.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb4')
+                      | Citrus 
+                      span.badge.badge-info 50% OFF
+                  .custom-control.custom-checkbox
+                    input#cb5.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb5') Cut Fresh &amp; Herbs
+                  .custom-control.custom-checkbox
+                    input#cb6.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb6')
+                      | Seasonal Fruits 
+                      span.badge.badge-success 25% OFF
+                  .custom-control.custom-checkbox
+                    input#cb7.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='cb7')
+                      | Fresh &amp; Herbs 
+                      span.badge.badge-primary 5% OFF
+            .card
+              #headingTwo.card-header
+                h5.mb-0
+                  button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Price 
+                    span.mdi.mdi-chevron-down.float-right
+              #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
+                .card-body.card-shop-filters
+                  .custom-control.custom-checkbox
+                    input#1.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='1')
+                      | $68 to $659 
+                      span.badge.badge-warning 50% OFF
+                  .custom-control.custom-checkbox
+                    input#2.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='2') $660 to $1014
+                  .custom-control.custom-checkbox
+                    input#3.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='3') $1015 to $1679
+                  .custom-control.custom-checkbox
+                    input#4.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='4') $1680 to $1856
+            .card
+              #headingThree.card-header
+                h5.mb-0
+                  button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    | Brand 
+                    span.mdi.mdi-chevron-down.float-right
+              #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion')
+                .card-body.card-shop-filters
+                  form.form-inline.mb-3
+                    .form-group
+                      input.form-control(type='text' placeholder='Search By Brand')
+                    button.btn.btn-secondary.ml-2(type='submit') GO
+                  .custom-control.custom-checkbox
+                    input#b1.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='b1')
+                      | Imported Fruits 
+                      span.badge.badge-warning 50% OFF
+                  .custom-control.custom-checkbox
+                    input#b2.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='b2')
+                      | Seasonal Fruits 
+                      span.badge.badge-secondary NEW
+                  .custom-control.custom-checkbox
+                    input#b3.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='b3')
+                      | Imported Fruits 
+                      span.badge.badge-danger 10% OFF
+                  .custom-control.custom-checkbox
+                    input#b4.custom-control-input(type='checkbox')
+                    label.custom-control-label(for='b4') Citrus
+            .card
+              #headingThree.card-header
+                h5.mb-0
+                  button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapsefour' aria-expanded='false' aria-controls='collapsefour')
+                    | Imported Fruits 
+                    span.mdi.mdi-chevron-down.float-right
+              #collapsefour.collapse(aria-labelledby='headingThree' data-parent='#accordion')
+                .card-body
+                  .list-group
+                    a.list-group-item.list-group-item-action(href='#') All Fruits
+                    a.list-group-item.list-group-item-action(href='#') Imported Fruits
+                    a.list-group-item.list-group-item-action(href='#') Seasonal Fruits
+                    a.list-group-item.list-group-item-action(href='#') Citrus
+                    a.list-group-item.list-group-item-action.disabled(href='#') Cut Fresh &amp; Herbs
+        .left-ad.mt-4
+          img.img-fluid(src='http://via.placeholder.com/254x557' alt='')
+      .col-md-9
+        a(href='#')
+          img.img-fluid.mb-3(src='https://askbootstrap.com/preview/osahan-grocery-v1-4/img/shop.jpg' alt='')
+        .shop-head
+          a(href='#')
+            span.mdi.mdi-home
+            |  Home
+          span.mdi.mdi-chevron-right
+          a(href='#') Fruits &amp; Vegetables
+          span.mdi.mdi-chevron-right
+          a(href='#') Fruits
+          .btn-group.float-right.mt-2
+            button.btn.btn-dark.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Sort by Products
+            .dropdown-menu.dropdown-menu-right
+              a.dropdown-item(href='#') Relevance
+              a.dropdown-item(href='#') Price (Low to High)
+              a.dropdown-item(href='#') Price (High to Low)
+              a.dropdown-item(href='#') Discount (High to Low)
+              a.dropdown-item(href='#') Name (A to Z)
+          h5.mb-3 Fruits
+
+        .row.no-gutters
+            each element in items
+                .col-md-4
+                    .product
+                      a(href=`/api/v1/royalnova/product/${element.name}`)
+                        .product-header
+                            span.badge.badge-success 50% OFF
+                            img.img-fluid(src=element.image alt='')
+                            span.veg.text-success.mdi.mdi-circle
+                        .product-body
+                            h5 #{element.name}
+                            h6
+                                strong
+                                    span.mdi.mdi-approval
+                                    |  Available
+                                //- |  - 500 gm
+                        .product-footer
+                            button.btn.btn-secondary.btn-sm.float-right(type='button')
+                                i.mdi.mdi-cart-outline
+                                |  Add To Cart
+                            p.offer-price.mb-0
+                                | #{element.ppu} 
+                                i.mdi.mdi-tag-outline
+                                br
+                                span.regular-price $800.99
+        
+        nav
+          ul.pagination.justify-content-center.mt-4
+            li.page-item.disabled
+              span.page-link Previous
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item.active
+              span.page-link
+                | 2
+                span.sr-only (current)
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#') Next
+section.product-items-slider.section-padding.bg-white.border-top
+  .container
+    .section-header
+      h5.heading-design-h5
+        | Best Offers View 
+        span.badge.badge-primary 20% OFF
+        a.float-right.text-secondary(href='shop.html') View All
+    .owl-carousel.owl-carousel-featured
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/7.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/8.jpg' alt='')
+              span.non-veg.text-danger.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/9.jpg' alt='')
+              span.non-veg.text-danger.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/10.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/11.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='single.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/12.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+section.section-padding.bg-white.border-top
+  .container
+    .row
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-truck-fast
+          h6 Free &amp; Next Day Delivery
+          p Lorem ipsum dolor sit amet, cons...
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-basket
+          h6 100% Satisfaction Guarantee
+          p Rorem Ipsum Dolor sit amet, cons...
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-tag-heart
+          h6 Great Daily Deals Discount
+          p Sorem Ipsum Dolor sit amet, Cons...
+// Footer
+section.section-padding.footer.bg-white.border-top
+  .container
+    .row
+      .col-lg-3.col-md-3
+        h4.mb-5.mt-0
+          a.logo(href='index.html')
+            img(src='img/logo-footer.png' alt='Groci')
+        p.mb-0
+          a.text-dark(href='#')
+            i.mdi.mdi-phone
+            |  +61 525 240 310
+        p.mb-0
+          a.text-dark(href='#')
+            i.mdi.mdi-cellphone-iphone
+            |  12345 67890, 56847-98562
+        p.mb-0
+          a.text-success(href='#')
+            i.mdi.mdi-email
+            |  iamosahan@gmail.com
+        p.mb-0
+          a.text-primary(href='#')
+            i.mdi.mdi-web
+            |  www.askbootstrap.com
+      .col-lg-2.col-md-2
+        h6.mb-4 TOP CITIES 
+        ul
+          li
+            a(href='#') New Delhi
+          li
+            a(href='#') Bengaluru
+          li
+            a(href='#') Hyderabad
+          li
+            a(href='#') Kolkata
+          li
+            a(href='#') Gurugram
+          ul
+      .col-lg-2.col-md-2
+        h6.mb-4 CATEGORIES
+        ul
+          li
+            a(href='#') Vegetables
+          li
+            a(href='#') Grocery &amp; Staples
+          li
+            a(href='#') Breakfast &amp; Dairy
+          li
+            a(href='#') Soft Drinks
+          li
+            a(href='#') Biscuits &amp; Cookies
+          ul
+      .col-lg-2.col-md-2
+        h6.mb-4 ABOUT US
+        ul
+          li
+            a(href='#') Company Information
+          li
+            a(href='#') Careers
+          li
+            a(href='#') Store Location
+          li
+            a(href='#') Affillate Program
+          li
+            a(href='#') Copyright
+          ul
+      .col-lg-3.col-md-3
+        h6.mb-4 Download App
+        .app
+          a(href='#')
+            img(src='img/google.png' alt='')
+          a(href='#')
+            img(src='img/apple.png' alt='')
+        h6.mb-3.mt-4 GET IN TOUCH
+        .footer-social
+          a.btn-facebook(href='#')
+            i.mdi.mdi-facebook
+          a.btn-twitter(href='#')
+            i.mdi.mdi-twitter
+          a.btn-instagram(href='#')
+            i.mdi.mdi-instagram
+          a.btn-whatsapp(href='#')
+            i.mdi.mdi-whatsapp
+          a.btn-messenger(href='#')
+            i.mdi.mdi-facebook-messenger
+          a.btn-google(href='#')
+            i.mdi.mdi-google
+
+
+include ./../include/footer.pug

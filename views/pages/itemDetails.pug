@@ -1,0 +1,257 @@
+include ./../include/header.pug
+
+section.pt-3.pb-3.page-info.section-padding.border-bottom.bg-white
+  .container
+    .row
+      .col-md-12
+        a(href='#')
+          strong
+            span.mdi.mdi-home
+            |  Home
+        span.mdi.mdi-chevron-right
+        a(href='#') Fruits &amp; Vegetables
+        span.mdi.mdi-chevron-right
+        a(href='#') Fruits
+section.shop-single.section-padding.pt-3
+  .container
+    .row
+      .col-md-6
+        .shop-detail-left
+          .shop-detail-slider
+            .favourite-icon
+              a.fav-btn(title='' data-placement='bottom' data-toggle='tooltip' href='#' data-original-title='59% OFF')
+                i.mdi.mdi-tag-outline
+            #sync1.owl-carousel
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/1.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/2.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/3.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/4.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/5.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/6.jpg')
+            #sync2.owl-carousel
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/1.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/2.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/3.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/4.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/5.jpg')
+              .item
+                img.img-fluid.img-center(alt='' src='img/item/6.jpg')
+      .col-md-6
+        .shop-detail-right
+          span.badge.badge-success 50% OFF
+          h2 SaveMore Corn Flakes (Pouch)
+          h6
+            strong
+              span.mdi.mdi-approval
+              |  Available in
+            |  - 500 gm
+          p.regular-price
+            i.mdi.mdi-tag-outline
+            |  MRP : $800.99
+          p.offer-price.mb-0
+            | Discounted price : 
+            span.text-success $450.99
+          a(href='checkout.html')
+            button.btn.btn-secondary.btn-lg(type='button')
+              i.mdi.mdi-cart-outline
+              |  Add To Cart
+          .short-description
+            h5
+              | Quick Overview  
+              p.float-right
+                | Availability: 
+                span.badge.badge-success In Stock
+            p
+              b Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              |  Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.
+            p.mb-0
+              | Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hiMenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum.
+          h6.mb-3.mt-4 Why shop from Groci?
+          .row
+            .col-md-6
+              .feature-box
+                i.mdi.mdi-truck-fast
+                h6.text-info Free Delivery
+                p Lorem ipsum dolor...
+            .col-md-6
+              .feature-box
+                i.mdi.mdi-basket
+                h6.text-info 100% Guarantee
+                p Rorem Ipsum Dolor sit...
+section.product-items-slider.section-padding.bg-white.border-top
+  .container
+    .section-header
+      h5.heading-design-h5
+        | Best Offers View 
+        span.badge.badge-primary 20% OFF
+        a.float-right.text-secondary(href='shop.html') View All
+    .owl-carousel.owl-carousel-featured
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/7.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/8.jpg' alt='')
+              span.non-veg.text-danger.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/9.jpg' alt='')
+              span.non-veg.text-danger.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/10.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/11.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+      .item
+        .product
+          a(href='shop.html')
+            .product-header
+              span.badge.badge-success 50% OFF
+              img.img-fluid(src='img/item/12.jpg' alt='')
+              span.veg.text-success.mdi.mdi-circle
+            .product-body
+              h5 Product Title Here
+              h6
+                strong
+                  span.mdi.mdi-approval
+                  |  Available in
+                |  - 500 gm
+            .product-footer
+              button.btn.btn-secondary.btn-sm.float-right(type='button')
+                i.mdi.mdi-cart-outline
+                |  Add To Cart
+              p.offer-price.mb-0
+                | $450.99 
+                i.mdi.mdi-tag-outline
+                br
+                span.regular-price $800.99
+section.section-padding.bg-white.border-top
+  .container
+    .row
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-truck-fast
+          h6 Free &amp; Next Day Delivery
+          p Lorem ipsum dolor sit amet, cons...
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-basket
+          h6 100% Satisfaction Guarantee
+          p Rorem Ipsum Dolor sit amet, cons...
+      .col-lg-4.col-sm-6
+        .feature-box
+          i.mdi.mdi-tag-heart
+          h6 Great Daily Deals Discount
+          p Sorem Ipsum Dolor sit amet, Cons...
+
+include ./../include/footer.pug

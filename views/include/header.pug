@@ -1,0 +1,160 @@
+doctype html
+head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='Royal nova supermarket Version 2')
+    meta(name='author' content='Nadim OUERTANI')
+    title #{title}
+    // Favicon Icon
+    link(rel='icon', type='image/png', href='/images/favicon.png')
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/materialdesignicons.min.css', media='all')
+    link(rel='stylesheet', href='/stylesheets/select2.min.css')
+    link(rel='stylesheet', href='/stylesheets/osahan.css')
+    link(rel='stylesheet', href='/stylesheets/extra.css')
+    // Owl Carousel
+    link(href='/stylesheets/owl.carousel.css', rel='stylesheet')
+    link(href='/stylesheets/owl.theme.css', rel='stylesheet')
+#bd-example-modal.modal.fade.login-modal-main
+    .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-body
+                .login-modal
+                    .row
+                        .col-lg-6.pad-right-0
+                            .login-modal-left
+                        .col-lg-6.pad-left-0
+                            button.close.close-top-right(type='button' data-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true')
+                                    i.mdi.mdi-close
+                                span.sr-only Close
+                            form
+                                .login-modal-right
+                                    // Tab panes
+                                    .tab-content
+                                        #login.tab-pane.active(role='tabpanel')
+                                            h5.heading-design-h5 Login to your account
+                                            fieldset.form-group
+                                                label Enter Email/Mobile number
+                                                input.form-control(type='text' placeholder='+91 123 456 7890')
+                                            fieldset.form-group
+                                                label Enter Password
+                                                input.form-control(type='password' placeholder='********')
+                                            fieldset.form-group
+                                                button.btn.btn-lg.btn-secondary.btn-block(type='submit') Enter to your account
+                                            .login-with-sites.text-center
+                                                p or Login with your social profile:
+                                                button.btn-facebook.login-icons.btn-lg
+                                                    i.mdi.mdi-facebook
+                                                    |  Facebook
+                                                button.btn-google.login-icons.btn-lg
+                                                    i.mdi.mdi-google
+                                                    |  Google
+                                                button.btn-twitter.login-icons.btn-lg
+                                                    i.mdi.mdi-twitter
+                                                    |  Twitter
+                                            .custom-control.custom-checkbox
+                                                input#customCheck1.custom-control-input(type='checkbox')
+                                                label.custom-control-label(for='customCheck1') Remember me
+                                        #register.tab-pane(role='tabpanel')
+                                            h5.heading-design-h5 Register Now!
+                                            fieldset.form-group
+                                                label Enter Email/Mobile number
+                                                input.form-control(type='text' placeholder='+91 123 456 7890')
+                                            fieldset.form-group
+                                                label Enter Password
+                                                input.form-control(type='password' placeholder='********')
+                                            fieldset.form-group
+                                                label Enter Confirm Password 
+                                                input.form-control(type='password' placeholder='********')
+                                            fieldset.form-group
+                                                button.btn.btn-lg.btn-secondary.btn-block(type='submit') Create Your Account
+                                            .custom-control.custom-checkbox
+                                                input#customCheck2.custom-control-input(type='checkbox')
+                                                label.custom-control-label(for='customCheck2')
+                                                    | I Agree with 
+                                                    a(href='#') Term and Conditions
+                                    .clearfix
+                                    .text-center.login-footer-tab
+                                        ul.nav.nav-tabs(role='tablist')
+                                            li.nav-item
+                                                a.nav-link.active(data-toggle='tab' href='#login' role='tab')
+                                                    i.mdi.mdi-lock
+                                                    |  LOGIN
+                                            li.nav-item
+                                                a.nav-link(data-toggle='tab' href='#register' role='tab')
+                                                    i.mdi.mdi-pencil
+                                                    |  REGISTER
+                                    .clearfix
+nav.navbar.navbar-light.navbar-expand-lg.bg-dark.bg-faded.osahan-menu
+    .container-fluid
+        a.navbar-brand(href='index.html')
+            img(src='/images/logo.svg', alt='logo')
+        a.location-top(href='#')
+            i.mdi.mdi-map-marker-circle(aria-hidden='true')
+            |  Dubai
+        button.navbar-toggler.navbar-toggler-white(type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarNavDropdown.navbar-collapse
+            .navbar-nav.mr-auto.mt-2.mt-lg-0.margin-auto.top-categories-search-main
+                .top-categories-search
+                    .input-group
+                        span.input-group-btn.categories-dropdown
+                            select.form-control-select
+                                option(selected='selected') Market
+                                option(value='0') Hayat regency
+                                option(value='2') Muraqabat
+                        input.form-control(placeholder='Search products in Your City' aria-label='Search products in Your City' type='text')
+                        span.input-group-btn
+                            button.btn.btn-secondary(type='button')
+                                i.mdi.mdi-file-find
+                                |  Search
+            .my-2.my-lg-0
+                ul.list-inline.main-nav-right
+                    li.list-inline-item
+                        a.btn.btn-link(href='#' data-target='#bd-example-modal' data-toggle='modal')
+                            i.mdi.mdi-account-circle
+                            |  Login/Sign Up
+                    li.list-inline-item.cart-btn
+                        a.btn.btn-link.border-none(href='#' data-toggle='offcanvas')
+                            i.mdi.mdi-cart
+                            |  My Cart 
+                            small.cart-value 5
+nav.navbar.navbar-expand-lg.navbar-light.osahan-menu-2.pad-none-mobile
+    .container-fluid
+        #navbarText.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto.mt-2.mt-lg-0.margin-auto
+                li.nav-item
+                    a.nav-link.shop(href='index.html')
+                        span.mdi.mdi-store
+                        |  Super Store
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova') Home
+                    
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Fresh Fruits & Vegetables') Fruits &amp; Vegetables
+
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Beverages, Coffee & Tea') Beverages
+
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Baby Products') Baby products
+
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Beauty and Personal Care') Beauty &amp; Personal Care
+
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Dairy') Dairy
+
+                li.nav-item
+                    a.nav-link(href='/api/v1/royalnova/Snacks') Snacks
+
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        | All Categories
+                    .dropdown-menu.dropMenu
+                        each element in categories
+                            a.dropdown-item(href=`/api/v1/royalnova/${element.name}`)
+                                i.mdi.mdi-chevron-right(aria-hidden='true')
+                                |  #{element.name}

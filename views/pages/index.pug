@@ -1,0 +1,125 @@
+include ./../include/header.pug
+
+//- ul
+//- each element in items
+//-     li= element.name
+
+section.carousel-slider-main.text-center.border-top.border-bottom.bg-white
+    .owl-carousel.owl-carousel-slider
+        .item
+            a(href='shop.html')
+                img.img-fluid(src='/images/slider1.jpg' alt='First slide')
+        .item
+            a(href='shop.html')
+                img.img-fluid(src='/images/slider2.jpg' alt='First slide')
+        .item
+            a(href='shop.html')
+                img.img-fluid(src='/images/slider1.jpg' alt='First slide')
+        .item
+            a(href='shop.html')
+                img.img-fluid(src='/images/slider2.jpg' alt='First slide')
+section.top-category.section-padding
+    .container
+        .owl-carousel.owl-carousel-category
+            each element in categories
+                .item
+                    .category-item
+                        a(href=`/api/v1/royalnova/${element.name}`)
+                            img.img-fluid(src=element.icon alt='')
+                            h6 #{element.name}
+                            p 150 Items
+            
+section.product-items-slider.section-padding
+    .container
+        .section-header
+            h5.heading-design-h5
+                | Top Savers Today 
+                span.badge.badge-primary 20% OFF
+                a.float-right.text-secondary(href='shop.html') View All
+        .owl-carousel.owl-carousel-featured
+            .item
+            each element in deal
+                .product
+                    a(href='single.html')
+                        .product-header
+                            span.badge.badge-success 50% OFF
+                            img.img-fluid(src=element.image alt='')
+                            span.veg.text-success.mdi.mdi-circle
+                        .product-body
+                            h5 #{element.name}
+                            h6
+                                strong
+                                    span.mdi.mdi-approval
+                                    |  Available
+                                //- |  - 500 gm
+                        .product-footer
+                            button.btn.btn-secondary.btn-sm.float-right(type='button')
+                                i.mdi.mdi-cart-outline
+                                |  Add To Cart
+                            p.offer-price.mb-0
+                                | #{element.ppu}
+                                i.mdi.mdi-tag-outline
+                                br
+                                span.regular-price $800.99
+section.offer-product
+    .container
+        .row.no-gutters
+            .col-md-6
+                a(href='#')
+                    img.img-fluid(src='/images/1_1.jpg' alt='')
+            .col-md-6
+                a(href='#')
+                    img.img-fluid(src='/images/2_1.jpg' alt='')
+section.product-items-slider.section-padding
+    .container
+        .section-header
+            h5.heading-design-h5
+                | Best Offers View 
+                span.badge.badge-info 20% OFF
+                a.float-right.text-secondary(href='shop.html') View All
+        .owl-carousel.owl-carousel-featured
+            .item
+            each element in discount
+                .product
+                    a(href='single.html')
+                        .product-header
+                            span.badge.badge-success 50% OFF
+                            img.img-fluid(src=element.image alt='')
+                            span.veg.text-success.mdi.mdi-circle
+                        .product-body
+                            h5 #{element.name}
+                            h6
+                                strong
+                                    span.mdi.mdi-approval
+                                    |  Available
+                                //- |  - 500 gm
+                        .product-footer
+                            button.btn.btn-secondary.btn-sm.float-right(type='button')
+                                i.mdi.mdi-cart-outline
+                                |  Add To Cart
+                            p.offer-price.mb-0
+                                | #{element.ppu}
+                                i.mdi.mdi-tag-outline
+                                br
+                                span.regular-price $800.99
+            
+section.section-padding.bg-white.border-top
+    .container
+        .row
+            .col-lg-4.col-sm-6
+                .feature-box
+                    i.mdi.mdi-truck-fast
+                    h6 Free &amp; Next Day Delivery
+                    p Lorem ipsum dolor sit amet, cons...
+            .col-lg-4.col-sm-6
+                .feature-box
+                    i.mdi.mdi-basket
+                    h6 100% Satisfaction Guarantee
+                    p Rorem Ipsum Dolor sit amet, cons...
+            .col-lg-4.col-sm-6
+                .feature-box
+                    i.mdi.mdi-tag-heart
+                    h6 Great Daily Deals Discount
+                    p Sorem Ipsum Dolor sit amet, Cons...
+
+include ./../include/footer.pug
